@@ -42,7 +42,7 @@ button.y = display.contentCenterY + 200
 local function showDay( event )
 	-- This funtion will tell the user what day it is 
 
-	day = string.upper(weekDayField.text)
+	day = weekDayField.text
 
 	Monday = "Monday"
 	Tuesday = "Tuesday"
@@ -51,7 +51,6 @@ local function showDay( event )
 	Friday = "Friday"
 	Saturday = "Saturday"
 	Sunday = "Sunday"
-	string.upper(Monday)
 
 	if day == Monday then
 		whatDay.text = "The day is a weekday"
